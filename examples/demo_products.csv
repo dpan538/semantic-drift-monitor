@@ -1,0 +1,5 @@
+product_id,brand,product_name,category,subcategory,spf_value,mineral_or_chemical,platform
+P001,SunKind,SunKind Mineral Daily SPF 50,skincare,sunscreen,50,mineral,demo
+P002,ClearRay,ClearRay Invisible Gel SPF 30,skincare,sunscreen,30,chemical,demo
+P003,Dermalume,Dermalume Sensitive Barrier SPF 50,skincare,spf_moisturizer,50,mineral,demo
+

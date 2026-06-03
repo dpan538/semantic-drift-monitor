@@ -1,0 +1,8 @@
+product_id,snapshot_date,title,description,bullet_points,price,rating_avg,rating_count,review_count
+P001,2026-01-01,SunKind Mineral Daily SPF 50,"Natural mineral zinc oxide sunscreen for sensitive skin. Gentle reef safe protection with no white cast.","broad spectrum; fragrance free; dermatologist tested",24.99,4.6,1200,1200
+P001,2026-02-01,SunKind Mineral Daily SPF 50,"Clean natural mineral sunscreen with advanced gentle protection. Reef safe, sensitive skin friendly, invisible finish.","broad spectrum; zinc oxide; dermatologist recommended",26.99,4.5,1260,1260
+P002,2026-01-01,ClearRay Invisible Gel SPF 30,"Lightweight fast absorbing invisible SPF for daily use under makeup. Non-greasy broad spectrum UV protection.","matte finish; no white cast; sweat resistant",18.99,4.4,900,900
+P002,2026-02-01,ClearRay Invisible Gel SPF 30,"Lightweight fast absorbing sunscreen gel for everyday commute and makeup layering.","non-greasy; broad spectrum; spf 30",18.99,4.5,940,940
+P003,2026-01-01,Dermalume Sensitive Barrier SPF 50,"Clinical dermatologist tested SPF moisturizer for reactive sensitive skin. Gentle mineral protection with zinc oxide.","fragrance free; hypoallergenic; premium",32.00,4.2,600,600
+P003,2026-02-01,Dermalume Sensitive Barrier SPF 50,"Advanced clinical gentle SPF moisturizer for sensitive skin and post procedure care.","medical grade; dermatologist recommended; zinc oxide",34.00,4.1,640,640
+

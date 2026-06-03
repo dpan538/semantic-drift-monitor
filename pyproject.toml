@@ -1,0 +1,16 @@
+[project]
+name = "semantic-drift-monitor"
+version = "0.1.0"
+description = "A computational pipeline to detect when promotional language erodes commodity potential."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "dpan538" }]
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "PyYAML>=6.0"
+]
+
+[tool.setuptools.packages.find]
+include = ["semantic_drift_monitor*"]

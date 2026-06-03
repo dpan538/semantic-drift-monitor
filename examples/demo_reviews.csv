@@ -1,0 +1,14 @@
+review_id,product_id,review_date,rating,verified_purchase,review_text
+R001,P001,2026-01-08,5,true,"I use this every day for my commute. It is gentle and did not sting my sensitive skin."
+R002,P001,2026-01-20,3,true,"The mineral formula is okay but there is still a white cast under makeup."
+R003,P001,2026-02-12,2,true,"This felt overhyped and not worth it. It says invisible but left a white cast."
+R004,P001,2026-02-20,2,true,"I wanted a natural reef safe sunscreen, but it was greasy and I will not buy again."
+R005,P002,2026-01-10,5,true,"Great under foundation and lightweight for daily work. No white cast for me."
+R006,P002,2026-01-24,4,true,"Used it at the pool and it held up well. Not greasy."
+R007,P002,2026-02-11,5,true,"Still my everyday sunscreen. Fast absorbing and good under makeup."
+R008,P002,2026-02-24,4,true,"Solid SPF for running and commute. I would repurchase."
+R009,P003,2026-01-12,3,true,"It is gentle but expensive for what it is. My rosacea did not flare."
+R010,P003,2026-01-22,2,true,"Clinical claims sound impressive but it stings after laser. Too expensive."
+R011,P003,2026-02-10,2,true,"This feels like just marketing. The premium price is hard to justify."
+R012,P003,2026-02-22,1,true,"Broke me out and did nothing special. Never again."
+
