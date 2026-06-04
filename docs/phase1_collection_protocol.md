@@ -39,6 +39,8 @@ Preferred, in order:
 4. Static snapshots collected with permission.
 5. Public pages only when Terms of Service and robots rules permit collection.
 
+For the first sunscreen/SPF feasibility pilot, see `docs/phase1_source_selection.md`. The recommended starting point is a local import from Amazon Reviews 2023 rather than live platform scraping.
+
 ## Minimum Input Files
 
 Create these local files. They are ignored by git by default:

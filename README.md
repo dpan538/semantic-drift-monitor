@@ -103,6 +103,34 @@ Canonical future tables:
 
 See `docs/data_schema.md`.
 
+## Phase 1 Source Selection
+
+The recommended first feasibility source is the McAuley Lab Amazon Reviews 2023 public research dataset, especially the Beauty and Personal Care metadata and review files.
+
+Use the local importer after downloading or otherwise obtaining permitted local copies:
+
+```bash
+python3 scripts/04_sample_amazon_reviews_2023.py \
+  --metadata-jsonl data/raw/meta_Beauty_and_Personal_Care.jsonl.gz \
+  --reviews-jsonl data/raw/Beauty_and_Personal_Care.jsonl.gz \
+  --target-products 100 \
+  --min-reviews 20 \
+  --min-review-months 12
+```
+
+This writes:
+
+```text
+data/raw/products.csv
+data/raw/snapshots.csv
+data/raw/reviews.csv
+data/raw/source_registry.csv
+data/raw/collection_targets.csv
+reports/phase1/source_selection_summary.csv
+```
+
+See `docs/phase1_source_selection.md`.
+
 ## Key Outputs
 
 The first-stage pipeline produces:
