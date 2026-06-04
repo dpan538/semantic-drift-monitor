@@ -5,7 +5,7 @@ description = "A computational pipeline to detect when promotional language erod
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "dpan538" }]
+authors = [{ name = "Dai Pan" }]
 dependencies = [
   "pandas>=2.0",
   "numpy>=1.24",
