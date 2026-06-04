@@ -162,7 +162,7 @@ Detection and evaluation:
 
 ## Quick Start
 
-Run the bundled demo:
+Check the local environment and prepare ignored working folders:
 
 ```bash
 git clone https://github.com/dpan538/semantic-drift-monitor.git
@@ -170,6 +170,13 @@ cd semantic-drift-monitor
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+python3 scripts/00_check_environment.py
+python3 scripts/01_prepare_phase1_workspace.py
+```
+
+Run the bundled demo:
+
+```bash
 python3 run_pipeline.py --demo
 ```
 
@@ -183,11 +190,27 @@ logs/alerts.log
 Run with your own permitted data:
 
 ```bash
+python3 scripts/03_validate_phase1_inputs.py \
+  --products data/raw/products.csv \
+  --snapshots data/raw/snapshots.csv \
+  --reviews data/raw/reviews.csv
+
 python3 run_pipeline.py \
   --products data/raw/products.csv \
   --snapshots data/raw/snapshots.csv \
   --reviews data/raw/reviews.csv
 ```
+
+If a target website explicitly permits static page collection, use the guarded Phase 1 snapshot experiment:
+
+```bash
+python3 scripts/02_collect_static_snapshots.py \
+  --targets data/raw/collection_targets.csv \
+  --out data/raw/snapshots.csv \
+  --confirm-compliance
+```
+
+The snapshot command refuses to run without `--confirm-compliance`. For restrictive platforms, use an official API, licensed dataset, or permitted manual export instead.
 
 ## Current Repository Status
 
@@ -207,13 +230,15 @@ This is intentional: the project uses explicit measurement and corpus-health gat
 
 Immediate next steps:
 
-1. Select a permitted data source for sunscreen/SPF skincare products.
-2. Build `product_master` for 50-80 pilot SKUs.
-3. Import timestamped reviews and current product snapshots.
-4. Validate phrase dictionaries against hand-labeled sentences.
-5. Build the first product-month panel.
-6. Run descriptive plots for promotional density, skepticism, value complaints, and scenario entropy.
-7. Add fixed-effects and event-study scripts once longitudinal coverage is sufficient.
+1. Run `scripts/00_check_environment.py`.
+2. Run `scripts/01_prepare_phase1_workspace.py`.
+3. Select a permitted data source for sunscreen/SPF skincare products.
+4. Build `product_master` for 50-80 pilot SKUs.
+5. Import timestamped reviews and current product snapshots.
+6. Validate phrase dictionaries against hand-labeled sentences.
+7. Build the first product-month panel.
+8. Run descriptive plots for promotional density, skepticism, value complaints, and scenario entropy.
+9. Add fixed-effects and event-study scripts once longitudinal coverage is sufficient.
 
 Scaling steps:
 

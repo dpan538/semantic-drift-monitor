@@ -1,0 +1,3 @@
+product_id,platform,asin_or_sku,brand,product_name,category,subcategory,spf_value,mineral_or_chemical,size_ml_or_oz,product_url,notes
+PILOT001,amazon_us,,Example Brand,Example Mineral Daily SPF 50,skincare,sunscreen,50,mineral,50,,replace with permitted source
+

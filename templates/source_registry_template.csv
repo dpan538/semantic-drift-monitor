@@ -1,0 +1,3 @@
+source_id,platform,source_type,access_method,access_url,robots_checked,tos_checked,license_or_terms_notes,collection_allowed,collector,collection_date,notes
+SRC001,amazon_us,product_reviews,official_api_or_permitted_export,,false,false,fill before collection,false,Dai Pan,2026-06-04,do not collect until compliance is confirmed
+

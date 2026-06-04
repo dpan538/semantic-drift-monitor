@@ -1,0 +1,3 @@
+product_id,snapshot_date,title,description,bullet_points,image_ocr_text,price,rating_avg,rating_count,review_count,source_url,source_method
+PILOT001,2026-06-04,Example Mineral Daily SPF 50,Example description,example bullet points,,24.99,4.5,100,100,,manual_or_permitted_export
+

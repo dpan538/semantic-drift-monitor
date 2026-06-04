@@ -1,0 +1,3 @@
+review_id,product_id,review_date,rating,verified_purchase,review_title,review_text,helpful_votes,source_method
+R-PILOT001-001,PILOT001,2026-06-04,5,true,Example review,Example review text,0,manual_or_permitted_export
+
