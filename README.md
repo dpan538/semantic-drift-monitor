@@ -129,6 +129,8 @@ python3 run_pipeline.py \
 python3 scripts/06_summarize_phase1_run.py
 
 python3 scripts/07_phase1_analysis.py
+
+python3 scripts/08_phase1_deep_dive.py
 ```
 
 This writes:
@@ -143,6 +145,7 @@ reports/phase1/source_selection_summary.csv
 reports/phase1/product_metric_summary.csv
 reports/phase1/phase1_run_summary.md
 reports/phase1/analysis/phase1_analysis_report.md
+reports/phase1/deep_dive/phase1_deep_dive_report.md
 ```
 
 See `docs/phase1_source_selection.md`.

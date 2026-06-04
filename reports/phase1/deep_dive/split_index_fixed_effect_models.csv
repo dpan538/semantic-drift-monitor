@@ -1,0 +1,5 @@
+outcome,predictor,n,product_fe,month_fe,beta,se,t,p_normal_approx,controls,status
+trust_response_index,lag_semantic_gap,9024,100,169,0.0034720481756215435,0.004730627963663101,0.733950799405711,0.4629787247971514,"promo_density_total, abstractness_ratio, avg_rating_month, log_reviews",ok
+trust_decline_index_theory,lag_semantic_gap,9024,100,169,0.007906164230026089,0.0038029010803411734,2.0789823513676025,0.03761897263436601,"promo_density_total, abstractness_ratio, avg_rating_month, log_reviews",ok
+lockin_index,lag_semantic_gap,9024,100,169,0.08681851179771807,0.03696204888463236,2.348855499561185,0.018831213281462266,"promo_density_total, abstractness_ratio, avg_rating_month, log_reviews",ok
+scenario_entropy,lag_semantic_gap,9024,100,169,-0.08681851179771771,0.03696204888463236,-2.348855499561175,0.018831213281462752,"promo_density_total, abstractness_ratio, avg_rating_month, log_reviews",ok

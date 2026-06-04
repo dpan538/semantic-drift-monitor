@@ -104,6 +104,8 @@ python3 run_pipeline.py \
 python3 scripts/06_summarize_phase1_run.py
 
 python3 scripts/07_phase1_analysis.py
+
+python3 scripts/08_phase1_deep_dive.py
 ```
 
 ## Interpretation Limits
