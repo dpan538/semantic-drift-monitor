@@ -150,6 +150,34 @@ reports/phase1/deep_dive/phase1_deep_dive_report.md
 
 See `docs/phase1_source_selection.md`.
 
+## Journal of Marketing Analytics Manuscript Package
+
+The Phase 1 analysis is now organized for a feasibility-study manuscript targeted at **Journal of Marketing Analytics**.
+
+Working manuscript title:
+
+> Semantic Gap, Scenario Lock-In, and Trust Response in Sunscreen Consumer Reviews: A Feasibility Study Using Amazon Reviews 2023
+
+The current positioning is deliberately applied and conservative: the paper presents a reproducible marketing analytics pipeline for measuring semantic gap, trust response, scenario lock-in, and experiential complaint signals in sunscreen/SPF reviews. The broader construct of commodity potential attenuation is retained as a theoretical discussion, not as the main empirical claim.
+
+Manuscript preparation files:
+
+- `docs/jma_targeting_strategy.md`: journal fit, contribution framing, and claim boundaries.
+- `docs/jma_submission_requirements.md`: double-blind submission checklist, abstract/keyword limits, and Harvard author-date style notes.
+- `docs/jma_sample_construction.md`: auditable sample construction table and static-metadata limitation.
+- `docs/jma_variable_definition_table.md`: construct and variable definitions for the manuscript.
+- `docs/jma_analysis_freeze_plan.md`: reproducibility commands and analysis-freeze rules.
+- `manuscript/abstract_and_keywords.md`: draft abstract under 200 words and 3-6 keywords.
+- `manuscript/anonymous_article_outline.md`: anonymous article structure for double-blind review.
+- `manuscript/author_information_file_template.md`: separate author information template.
+- `manuscript/references_harvard_seed.md`: initial Harvard-style reference seed list.
+- `appendix/jma_appendix_plan.md`: appendix and supplementary-material structure.
+- `freeze/phase1_jma_feasibility_v0_1.md`: current Phase 1 analysis freeze manifest.
+
+Important methodological constraint:
+
+> Product metadata are treated as static product-semantic descriptors and expanded to product-month observations only for feasibility modelling. They are not interpreted as historical changes in Amazon product pages.
+
 ## Key Outputs
 
 The first-stage pipeline produces:
@@ -261,31 +289,38 @@ The snapshot command refuses to run without `--confirm-compliance`. For restrict
 
 ## Current Repository Status
 
-The current repository is a methods-and-pipeline baseline, not an inference-ready empirical corpus.
+The current repository contains a methods pipeline plus a completed Phase 1 feasibility analysis package.
 
 At this stage:
 
-- demo data are synthetic and only verify that the pipeline runs;
-- product-page collection adapters are placeholders until a permitted data source is selected;
-- the semantic gap metric is intentionally lightweight and should be upgraded or validated before publication;
-- the attenuation index is exploratory and should not be treated as a validated latent construct;
-- human annotation and corpus health gates must be added before strong empirical claims.
+- raw Amazon review text and platform-governed source files are intentionally not redistributed;
+- public Phase 1 outputs are analysis summaries, tables, figures, and metric panels without raw review text;
+- product metadata are static descriptors, not historical product-page snapshots;
+- the semantic gap metric is intentionally lightweight and should be reported as a feasibility measure;
+- attenuation is split into trust response and scenario lock-in, with composite versions treated as exploratory;
+- human annotation, robustness checks, and final corpus health gates remain required before submission.
 
 This is intentional: the project uses explicit measurement and corpus-health gates to prevent premature claims.
 
 ## Research Roadmap
 
-Immediate next steps:
+Completed Phase 1 steps:
 
-1. Run `scripts/00_check_environment.py`.
-2. Run `scripts/01_prepare_phase1_workspace.py`.
-3. Select a permitted data source for sunscreen/SPF skincare products.
-4. Build `product_master` for 50-80 pilot SKUs.
-5. Import timestamped reviews and current product snapshots.
-6. Validate phrase dictionaries against hand-labeled sentences.
-7. Build the first product-month panel.
-8. Run descriptive plots for promotional density, skepticism, value complaints, and scenario entropy.
-9. Add fixed-effects and event-study scripts once longitudinal coverage is sufficient.
+1. Prepared the local research environment.
+2. Selected Amazon Reviews 2023 as the permitted public research source.
+3. Built a 100-product sunscreen/SPF sample from Beauty and Personal Care.
+4. Imported 50,000 timestamped reviews into ignored local raw data.
+5. Built 9,124 product-month observations.
+6. Generated descriptive trends, SPF group comparisons, fixed-effects models, keyword drift, and deep-dive split-index analyses.
+7. Organized JMA-facing documentation, manuscript outline, appendix plan, and analysis freeze manifest.
+
+Immediate manuscript steps:
+
+1. Freeze the Phase 1 metric outputs under `phase1_jma_feasibility_v0_1`.
+2. Complete validation logs and sample-construction tables for the appendix.
+3. Run the planned robustness checks and export model tables in manuscript format.
+4. Draft the Introduction, Data and Sample, Measures, and Results sections from the prepared Markdown files.
+5. Prepare the anonymous article file separately from the author information file.
 
 Scaling steps:
 
