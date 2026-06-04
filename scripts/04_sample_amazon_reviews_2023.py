@@ -10,6 +10,8 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterable
+from urllib.parse import urlparse
+from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -19,11 +21,21 @@ DEFAULT_QUERY_TERMS = [
     "sunblock",
     "spf",
     "broad spectrum",
+    "sun protection",
     "uva",
     "uvb",
     "zinc oxide",
     "titanium dioxide",
     "reef safe",
+]
+
+PRIMARY_QUERY_TERMS = [
+    "sunscreen",
+    "sun screen",
+    "sunblock",
+    "spf",
+    "broad spectrum",
+    "sun protection",
 ]
 
 CHEMICAL_FILTER_TERMS = [
@@ -40,8 +52,8 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Sample sunscreen/SPF products from local Amazon Reviews 2023 JSONL files."
     )
-    parser.add_argument("--metadata-jsonl", type=Path, required=True, help="Local metadata JSONL or JSONL.GZ file.")
-    parser.add_argument("--reviews-jsonl", type=Path, required=True, help="Local reviews JSONL or JSONL.GZ file.")
+    parser.add_argument("--metadata-jsonl", required=True, help="Local path or HTTPS URL to metadata JSONL/JSONL.GZ.")
+    parser.add_argument("--reviews-jsonl", required=True, help="Local path or HTTPS URL to reviews JSONL/JSONL.GZ.")
     parser.add_argument("--target-products", type=int, default=100)
     parser.add_argument("--min-reviews", type=int, default=20)
     parser.add_argument("--min-review-months", type=float, default=12.0)
@@ -55,14 +67,42 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def open_text(path: Path):
+def is_url(value: str) -> bool:
+    parsed = urlparse(value)
+    return parsed.scheme in {"http", "https"}
+
+
+def open_text(location: str):
+    if is_url(location):
+        request = Request(location, headers={"User-Agent": "SemanticDriftMonitor/0.1 academic-research"})
+        response = urlopen(request, timeout=60)
+        if location.endswith(".gz"):
+            return gzip.open(response, "rt", encoding="utf-8", errors="replace")
+        return _ResponseTextWrapper(response)
+    path = Path(location)
     if path.suffix == ".gz":
         return gzip.open(path, "rt", encoding="utf-8", errors="replace")
     return path.open("r", encoding="utf-8", errors="replace")
 
 
-def iter_jsonl(path: Path) -> Iterable[dict[str, Any]]:
-    with open_text(path) as handle:
+class _ResponseTextWrapper:
+    def __init__(self, response):
+        self.response = response
+
+    def __iter__(self):
+        for raw_line in self.response:
+            yield raw_line.decode("utf-8", errors="replace")
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        self.response.close()
+        return False
+
+
+def iter_jsonl(location: str) -> Iterable[dict[str, Any]]:
+    with open_text(location) as handle:
         for line_number, line in enumerate(handle, start=1):
             line = line.strip()
             if not line:
@@ -70,7 +110,7 @@ def iter_jsonl(path: Path) -> Iterable[dict[str, Any]]:
             try:
                 row = json.loads(line)
             except json.JSONDecodeError as exc:
-                raise ValueError(f"Invalid JSON at {path}:{line_number}: {exc}") from exc
+                raise ValueError(f"Invalid JSON at {location}:{line_number}: {exc}") from exc
             if isinstance(row, dict):
                 yield row
 
@@ -113,8 +153,30 @@ def metadata_text(row: dict[str, Any]) -> str:
     return normalize(" ".join(flatten_value(part) for part in parts))
 
 
-def contains_query(text: str, query_terms: list[str]) -> bool:
-    return any(term.lower() in text for term in query_terms)
+def title_category_text(row: dict[str, Any]) -> str:
+    parts = [
+        field(row, "title"),
+        field(row, "categories"),
+        field(row, "main_category"),
+    ]
+    return normalize(" ".join(flatten_value(part) for part in parts))
+
+
+def term_present(text: str, term: str) -> bool:
+    escaped = re.escape(term.lower()).replace(r"\ ", r"\s+")
+    if term.lower() == "spf":
+        pattern = r"(?<!\w)spf\s*[-+]?\s*\d{0,3}(?!\w)"
+    else:
+        pattern = rf"(?<!\w){escaped}(?!\w)"
+    return re.search(pattern, text, flags=re.IGNORECASE) is not None
+
+
+def matched_terms(text: str, query_terms: list[str]) -> list[str]:
+    return [term for term in query_terms if term_present(text, term)]
+
+
+def contains_primary_query(text: str) -> bool:
+    return any(term_present(text, term) for term in PRIMARY_QUERY_TERMS)
 
 
 def extract_spf(text: str) -> str:
@@ -164,18 +226,19 @@ def collect_candidates(metadata_path: Path, query_terms: list[str]) -> dict[str,
         product_id = str(field(row, "parent_asin", "asin")).strip()
         if not product_id:
             continue
-        text = metadata_text(row)
-        if not contains_query(text, query_terms):
-            continue
         title = flatten_value(field(row, "title")).strip()
         if not title:
+            continue
+        text = metadata_text(row)
+        focused_text = title_category_text(row)
+        if not contains_primary_query(focused_text):
             continue
         candidates[product_id] = {
             "raw": row,
             "product_id": product_id,
             "title": title,
             "text": text,
-            "matched_terms": [term for term in query_terms if term.lower() in text],
+            "matched_terms": matched_terms(text, query_terms),
         }
     return candidates
 
@@ -511,4 +574,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

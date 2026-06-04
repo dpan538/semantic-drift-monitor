@@ -83,7 +83,15 @@ data/raw/collection_targets.csv
 reports/phase1/source_selection_summary.csv
 ```
 
-Then validate and run the pipeline:
+The Amazon Reviews 2023 metadata are static rather than monthly historical product-page captures. For Phase 1 feasibility, repeat each static metadata snapshot across the months where that product has reviews:
+
+```bash
+python3 scripts/05_expand_static_snapshots_to_review_months.py
+```
+
+This creates a product-month panel suitable for a static-metadata feasibility run. It does not imply that promotional copy changed historically.
+
+Then validate, run the pipeline, and summarize:
 
 ```bash
 python3 scripts/03_validate_phase1_inputs.py --strict
@@ -92,9 +100,10 @@ python3 run_pipeline.py \
   --products data/raw/products.csv \
   --snapshots data/raw/snapshots.csv \
   --reviews data/raw/reviews.csv
+
+python3 scripts/06_summarize_phase1_run.py
 ```
 
 ## Interpretation Limits
 
 Amazon Reviews 2023 is excellent for a feasibility pilot, but it is still a historical public dataset. It does not provide a monthly sequence of live product-page copy changes. For a stronger longitudinal study, pair it with prospective page snapshots collected from permitted sources.
-

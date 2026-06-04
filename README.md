@@ -116,6 +116,17 @@ python3 scripts/04_sample_amazon_reviews_2023.py \
   --target-products 100 \
   --min-reviews 20 \
   --min-review-months 12
+
+python3 scripts/05_expand_static_snapshots_to_review_months.py
+
+python3 scripts/03_validate_phase1_inputs.py --strict
+
+python3 run_pipeline.py \
+  --products data/raw/products.csv \
+  --snapshots data/raw/snapshots.csv \
+  --reviews data/raw/reviews.csv
+
+python3 scripts/06_summarize_phase1_run.py
 ```
 
 This writes:
@@ -127,6 +138,8 @@ data/raw/reviews.csv
 data/raw/source_registry.csv
 data/raw/collection_targets.csv
 reports/phase1/source_selection_summary.csv
+reports/phase1/product_metric_summary.csv
+reports/phase1/phase1_run_summary.md
 ```
 
 See `docs/phase1_source_selection.md`.

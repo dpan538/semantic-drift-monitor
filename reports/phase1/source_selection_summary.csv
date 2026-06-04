@@ -1,0 +1,101 @@
+product_id,brand,review_count,sampled_reviews,first_review_date,last_review_date,review_span_months,matched_terms
+B01MYQW5SM,Neutrogena,3821,500,2007-08-23,2023-08-28,192.1,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B088MSY15Q,Australian Gold,3572,500,2017-02-21,2023-09-04,78.4,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide; titanium dioxide
+B0BSTY3KN9,CeraVe,3568,500,2019-12-19,2023-08-30,44.3,sunscreen; spf; sun protection; uva; uvb; zinc oxide; titanium dioxide
+B0BQX52B49,Vive,3209,500,2017-03-13,2023-06-08,74.8,sunscreen
+B0CH6RQX8P,DRMTLGY,3199,500,2019-05-28,2023-08-29,51.1,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B09DNX6J3P,Sun Bum,2755,500,2012-06-25,2023-08-09,133.4,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B0C8BKLQYJ,Jergens,2755,500,2009-06-07,2023-09-05,170.9,sunscreen; spf; broad spectrum; uva; uvb
+B0BDW22ZVC,REVLON,2624,500,2011-06-29,2023-08-20,145.7,spf
+B09V26RGC7,Etude House,2581,500,2015-06-21,2023-08-23,98.1,sunscreen; spf; sun protection
+B0BZZV3QKC,Neutrogena,2523,500,2010-07-18,2023-08-03,156.5,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B002JAYMEE,Neutrogena,2518,500,2009-11-13,2023-07-19,164.1,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B0BT9VGHD4,Maybelline New York,2486,500,2011-01-05,2023-08-20,151.4,spf
+B09YZ356QW,Maybelline New York,2391,500,2012-06-23,2023-08-23,134.0,spf; broad spectrum
+B00J5KDCO2,,2381,500,2014-05-22,2023-08-28,111.2,sunscreen; spf; sun protection; uva; uvb; zinc oxide
+B0C5XCCB1Y,,2282,500,2013-12-17,2023-08-24,116.2,sunscreen; spf
+B0058SXKV0,Banana Boat,2281,500,2012-07-12,2023-09-01,133.6,sunscreen; sunblock; spf; broad spectrum; sun protection; uva; uvb
+B095FMX9LT,Sun Bum,2182,500,2013-03-16,2023-09-09,125.8,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B087QY5N5H,,2104,500,2011-05-05,2023-08-31,147.9,sunscreen; spf; zinc oxide
+B079Z6VK4W,bareMinerals,2102,500,2007-01-10,2023-08-14,199.1,spf
+B0C2DT1Z2N,Australian Gold,2100,500,2020-02-27,2023-08-20,41.7,sunscreen; sunblock; spf; sun protection; zinc oxide; titanium dioxide
+B004D2C57M,Neutrogena,2065,500,2011-03-08,2023-08-20,149.4,sunscreen; spf; broad spectrum
+B01CQU78VK,Estee Lauder,1916,500,2009-05-05,2023-08-26,171.7,spf
+B0C69TMNNS,,1878,500,2012-11-15,2023-08-28,129.4,sunscreen; spf; broad spectrum; sun protection; uva; uvb; titanium dioxide
+B0BHMSNGR2,MISSHA,1870,500,2010-01-25,2023-08-24,162.9,spf
+B001IM5VT4,Aveeno,1778,500,2010-01-17,2023-08-13,162.8,sunscreen; spf; broad spectrum; uva; uvb
+B00008MNZH,Eucerin,1773,500,2005-02-20,2023-08-28,222.2,spf; broad spectrum; sun protection; uva; uvb; zinc oxide; titanium dioxide
+B00C8FVZZY,,1746,500,2017-05-11,2023-08-12,75.0,sunscreen; spf; sun protection; uva; uvb; zinc oxide; titanium dioxide
+B0BTMMMZ22,,1719,500,2015-01-25,2023-08-10,102.5,spf
+B07QGG5MV2,CeraVe,1602,500,2019-03-08,2023-08-31,53.8,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide; titanium dioxide
+B08MTDKCX8,Earth's Daughter,1602,500,2018-07-10,2023-07-15,60.2,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B0BNPHJ9GM,MISSHA,1556,500,2010-03-25,2023-09-03,161.3,sunscreen; spf
+B09FGR6L63,Neutrogena,1525,500,2014-02-18,2023-01-31,107.4,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B01LWUS3BA,REVLON,1509,500,2016-10-25,2023-08-08,81.4,spf; sun protection
+B0B3LHMSN2,Natural Ice,1482,500,2003-09-16,2023-08-04,238.6,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B0BSSLNXZY,,1471,500,2011-05-21,2023-09-01,147.4,sunscreen; spf; sun protection; uva; uvb; zinc oxide
+B01NCWV3KM,,1459,500,2017-02-14,2023-08-12,77.9,sunscreen; spf; sun protection
+B0CBL92Q9Q,,1419,500,2010-01-16,2023-08-31,163.4,sunscreen; spf; sun protection
+B0874GFK2Z,Australian Gold,1404,500,2007-01-10,2023-08-26,199.5,sunscreen; sunblock; spf; broad spectrum; sun protection; uva; uvb
+B071CGN3QM,bareMinerals,1392,500,2015-02-10,2023-07-05,100.8,spf
+B01A0NT3D6,,1383,500,2016-04-03,2023-09-03,89.0,sunscreen; spf; sun protection
+B09JTF1KYX,L'Oreal Paris,1316,500,2010-03-10,2023-08-20,161.3,spf; broad spectrum; uva; uvb
+B094TT8FVG,Cetaphil,1230,500,2021-01-04,2023-09-06,32.0,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide; titanium dioxide; reef safe
+B075WZQ8RF,Olay,1226,500,2017-12-07,2023-07-19,67.3,sunscreen; spf; sun protection
+B0BDW4R1B5,REVLON,1212,500,2011-01-15,2023-06-11,148.8,spf
+B09KL2Q9TX,DC DERMACOL,1192,500,2015-02-13,2023-08-20,102.2,spf
+B0B6WRX48T,L'Oreal Paris,1185,500,2019-12-17,2023-08-23,44.2,spf
+B00HB2JQNM,Olay,1183,500,2014-02-22,2023-08-31,114.2,spf; sun protection
+B0C52N53Q3,Neutrogena,1165,500,2011-08-29,2023-07-18,142.6,sunscreen; spf; broad spectrum; sun protection
+B0BXBBMVZ3,Supergoop!,1165,500,2020-11-27,2023-09-04,33.2,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B08748D8TF,Australian Gold,1145,500,2010-09-22,2023-08-03,154.3,sunscreen; sunblock; spf; broad spectrum; sun protection; uva; uvb
+B0BFV6YN3B,Neutrogena,1113,500,2013-04-10,2023-08-13,124.1,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B006L2137U,Cetaphil,1102,500,2012-03-31,2022-12-24,128.8,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B07KL7HPXV,CeraVe,1094,500,2019-03-16,2023-08-28,53.4,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide; titanium dioxide
+B0BN491W2F,Banana Boat,1084,500,2013-12-14,2023-08-30,116.5,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B09Q3WZHB6,Physicians Formula,1081,500,2012-03-16,2023-07-13,135.9,spf
+B093C28CWW,Burt's Bees,1078,500,2015-12-26,2023-06-01,89.2,sunscreen; spf; zinc oxide
+B007KA7V5U,Neutrogena,1076,500,2013-04-12,2023-07-20,123.2,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B09KP64LQB,Neutrogena,1051,500,2016-01-07,2023-08-26,91.6,sunscreen; spf; broad spectrum; uva; uvb; titanium dioxide
+B007M81A6Q,Olay,1038,500,2012-06-29,2023-08-16,133.5,sunscreen; spf
+B001P92FMG,Neutrogena,989,500,2010-04-15,2023-09-01,160.5,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B007MV4BQY,Sun Bum,983,500,2012-10-12,2023-08-16,130.1,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B09NN2726V,Palmer's,968,500,2017-10-15,2023-08-29,70.4,spf; sun protection
+B07GDT961B,Cetaphil,918,500,2018-09-17,2023-08-28,59.3,spf; broad spectrum; sun protection; uva; uvb
+B0B3NMNHQ1,Aveeno,910,500,2009-10-07,2023-04-19,162.4,sunscreen; spf; broad spectrum; uva; uvb
+B0BF9M6QM7,Hawaiian Tropic,892,500,2011-07-16,2023-08-25,145.3,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B0CGMHHVGS,CeraVe,873,500,2018-02-18,2023-09-03,66.5,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B09Q3VGBF1,Physicians Formula,869,500,2014-04-22,2023-08-11,111.6,spf; uva; uvb
+B003AVNK0S,BLUE LIZARD,865,500,2010-12-02,2023-07-08,151.1,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide
+B0BTTSFGLS,Alba Botanica,862,500,2015-06-02,2023-08-12,98.3,sunscreen; spf; broad spectrum; sun protection
+B07QM2C61T,BLUE LIZARD,857,500,2019-07-03,2023-09-01,50.0,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide
+B00K3JQO9Y,THINK,832,500,2014-07-27,2023-07-16,107.6,sunscreen; sunblock; spf; broad spectrum; sun protection; uva; uvb
+B0013OKSAY,Aveeno,830,500,2011-02-07,2023-03-18,145.3,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B07KGL1YZL,Beauty by Earth,817,500,2014-08-02,2023-08-21,108.6,sunscreen; sun screen; sunblock; spf; sun protection; zinc oxide
+B0BQX4ZR4X,Vive,803,500,2018-02-08,2023-08-25,66.5,sunscreen
+B0872HDGFZ,bareMinerals,798,500,2014-11-11,2023-08-15,105.1,spf; broad spectrum
+B09VVF2V6R,Banana Boat,792,500,2010-09-23,2023-08-21,154.9,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B000052YQ2,Olay,786,500,2005-06-18,2023-08-07,217.6,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide
+B0747TWXZW,bareMinerals,785,500,2010-07-22,2023-06-20,154.9,spf; broad spectrum
+B007SAC6XE,Thinksport,784,500,2012-06-26,2023-07-04,132.2,sunscreen; sunblock; spf; broad spectrum; sun protection; uva; uvb; zinc oxide
+B00CWY8OC8,RoC,782,500,2013-09-20,2023-08-13,118.7,spf; broad spectrum; uva; uvb
+B07SG7ND5C,Sun Bum,781,500,2018-07-28,2023-08-17,60.6,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B09M16VNYN,Sun Bum,781,500,2018-04-04,2023-09-04,65.0,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B0861ZRWRC,Australian Gold,775,500,2008-06-18,2023-08-22,182.1,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B0BTTN3SVN,Alba Botanica,763,500,2011-07-14,2023-08-03,144.6,sunscreen; spf; broad spectrum; sun protection
+B01KJGUUHM,Eucerin,750,500,2016-11-16,2023-08-10,80.7,sunscreen; spf; broad spectrum; uva; uvb
+B008KYYLPI,Hawaiian Tropic,744,500,2012-07-05,2022-11-17,124.4,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B00E9OXJUQ,MISSHA,741,500,2015-03-26,2023-08-20,100.8,spf; sun protection
+B0BHFCMMW1,Gloves In A Bottle,738,500,2017-01-20,2023-07-19,77.9,spf; sun protection
+B001F51TBI,Olay,737,500,2009-05-05,2023-08-07,171.1,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide
+B0BX593B3J,Sun Bum,729,500,2012-08-04,2023-08-18,132.4,sunscreen; spf; broad spectrum; sun protection; uva; uvb
+B00FLRHYCE,Hawaiian Tropic,724,500,2014-05-15,2023-08-17,111.1,sunscreen; sunblock; spf; broad spectrum; sun protection; uva; uvb
+B001SZ1MRQ,COVERGIRL,717,500,2011-08-26,2023-05-13,140.5,spf; broad spectrum; sun protection; uva; uvb
+B07ZQBGRJX,Physicians Formula,715,500,2010-01-12,2023-01-02,155.7,spf
+B09642QYTS,A'PIEU,715,500,2016-04-02,2023-08-31,88.9,sunscreen; spf; sun protection; reef safe
+B0C5JVD54M,Brush On Block,714,500,2014-07-02,2023-08-10,109.3,sunscreen; sunblock; spf; sun protection; uva; uvb; zinc oxide; titanium dioxide
+B005JFPGX2,MISSHA,710,500,2012-04-17,2023-07-02,134.5,spf; zinc oxide
+B007SNM6OK,THINK,701,500,2013-06-28,2023-07-09,120.3,sunscreen; sunblock; spf; broad spectrum; sun protection; uva; uvb; zinc oxide
+B0CDYV161L,Coppertone,692,500,2019-04-11,2023-08-25,52.5,sunscreen; spf; broad spectrum; sun protection; uva; uvb; zinc oxide
+B0BYDKJG5X,Yoseng,691,500,2016-05-19,2023-08-08,86.6,sunscreen
+B07PDHPJ5N,Beauty by Earth,688,500,2017-10-10,2023-07-11,69.0,sunscreen; sunblock; spf; broad spectrum; sun protection; zinc oxide; reef safe
