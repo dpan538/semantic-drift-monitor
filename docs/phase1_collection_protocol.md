@@ -90,6 +90,8 @@ python3 run_pipeline.py \
   --reviews data/raw/reviews.csv
 
 python3 scripts/06_summarize_phase1_run.py
+
+python3 scripts/07_phase1_analysis.py
 ```
 
 Use strict validation when the feasibility pilot is expected to meet the minimum review-count and temporal-coverage gates:

@@ -127,6 +127,8 @@ python3 run_pipeline.py \
   --reviews data/raw/reviews.csv
 
 python3 scripts/06_summarize_phase1_run.py
+
+python3 scripts/07_phase1_analysis.py
 ```
 
 This writes:
@@ -140,6 +142,7 @@ data/raw/collection_targets.csv
 reports/phase1/source_selection_summary.csv
 reports/phase1/product_metric_summary.csv
 reports/phase1/phase1_run_summary.md
+reports/phase1/analysis/phase1_analysis_report.md
 ```
 
 See `docs/phase1_source_selection.md`.

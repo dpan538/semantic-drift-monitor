@@ -1,0 +1,3 @@
+outcome,n,product_fe,month_fe,beta_lag_semantic_gap,se_lag_semantic_gap,t_lag_semantic_gap,p_lag_semantic_gap_normal_approx,controls,weighted_by_review_count
+skepticism_ratio,9024,100,169,0.006054218031718593,0.008535854146728817,0.709269151938209,0.4781574676632021,"promo_density_total, abstractness_ratio, avg_rating_month, log_reviews",True
+scenario_entropy,9024,100,169,-0.08681851179771771,0.03696204888463236,-2.348855499561175,0.018831213281462752,"promo_density_total, abstractness_ratio, avg_rating_month, log_reviews",True
